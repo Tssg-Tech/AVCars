@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="web/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-3 align-items-center justify-content-start">
+                <img src="web/images/carlogo.png" width="100px" alt="">
+                <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
+                    <li><a href="" class="active">HOME</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="#">GALLERY</a></li>
+                            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-three-dots menuicon d-md-none "></i>
+            </div>
+            <div class="icons d-flex gap-3">
+                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-heart-fill"></i>
+                <i class="bi bi-cart-fill"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- hero banner -->
+    <div id="carouselExampleAutoplaying position-relative" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators d-none d-md-flex">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-banner-div">
+                    <img src="web/images/herobannerimg1.jpg" alt="">
+                    <div class="hero-banner-text">
+                        <div class="container">
+                            <h1><span>The World's </span>Best</h1>
+                            <h2>auto parts</h2>
+                            <p class="d-none d-md-block">we are the leading auto parts company with the world-wide
+                                reputation of premium quality
+                            </p>
+                            <div class="button d-none d-md-block">
+                                <a href="">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-banner-div">
+                    <img src="web/images/herobannerimg2.jpg" alt="">
+                    <div class="hero-banner-text">
+                        <div class="container">
+                            <h1><span>Premium </span>Goods</h1>
+                            <h2>for racers</h2>
+                            <p class="d-none d-md-block">we are the leading auto parts company with the world-wide
+                                reputation of premium quality
+                            </p>
+                            <div class="button d-none d-md-block">
+                                <a href="">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-banner-div">
+                    <img src="web/images/herobannerimg3.jpg" alt="">
+                    <div class="hero-banner-text">
+                        <div class="container">
+                            <h1><span>WIDE </span>Selection</h1>
+                            <h2>of items</h2>
+                            <p class="d-none d-md-block">we are the leading auto parts company with the world-wide
+                                reputation of premium quality
+                            </p>
+                            <div class="button d-none d-md-block">
+                                <a href="">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- welocme to AV cars part -->
+    <section class="welcome py-5 bg-light">
+        <span class="welcome-number">01</span>
+        <h1>Welcome to <br>
+            <span>AV CARPART Hub</span>
+        </h1>
+        <h2>We have all the auto parts you need</h2>
+    </section>
+
+    <!-- parts section -->
+    <section class="parts-section">
+        <a href="" class="parts-div">
+            <img src="web/images/cat-1.jpg" alt="">
+            <div>
+                <h3>WHEELS</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div">
+            <img src="web/images/cat-2.jpg" alt="">
+            <div>
+                <h3>Lighting</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div">
+            <img src="web/images/cat-1.jpg" alt="">
+            <div>
+                <h3>performance</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div">
+            <img src="web/images/cat-2.jpg" alt="">
+            <div>
+                <h3>Electronic</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div">
+            <img src="web/images/cat-1.jpg" alt="">
+            <div>
+                <h3>Exterior</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div">
+            <img src="web/images/cat-2.jpg" alt="">
+            <div>
+                <h3>Body parts</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div d-none d-lg-block">
+            <img src="web/images/cat-1.jpg" alt="">
+            <div>
+                <h3>Interior</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div d-none d-xl-block">
+            <img src="web/images/cat-2.jpg" alt="">
+            <div>
+                <h3>WHEELS</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div d-none d-lg-block">
+            <img src="web/images/cat-1.jpg" alt="">
+            <div>
+                <h3>Repair parts</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+        <a href="" class="parts-div d-none d-xl-block">
+            <img src="web/images/cat-2.jpg" alt="">
+            <div>
+                <h3>other</h3>
+                <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</span>
+            </div>
+        </a>
+    </section>
+
+
+    <!-- banner above products -->
+    <section>
+        <div class="bg-banner-div">
+            <img src="web/images/bgbanner.jpg" alt="">
+            <div class="banner-aboveprd">
+                <span class="number">02</span>
+                <h1>Perform and <br>
+                    <span>Inspire</span>
+                </h1>
+                <h1>-20%</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- product section -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row gx-1 gy-5">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="web/images/wheels.png" alt="">
+                        <div class="product-title">Vossen Precision VPS-312</div>
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">₹520.00</div>
+                        <div class="button">
+                            <a href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="web/images/wheels.png" alt="">
+                        <div class="product-title">Vossen CV5 Silver</div>
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">₹440.00</div>
+                        <div class="button">
+                            <a href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="web/images/wheels.png" alt="">
+                        <div class="product-title">Vossen VFS/1 Graphite</div>
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">₹520.00</div>
+                        <div class="button">
+                            <a href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="web/images/wheels.png" alt="">
+                        <div class="product-title">Vossen Precision VPS-312</div>
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">₹520.00</div>
+                        <div class="button">
+                            <a href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="web/images/wheels.png" alt="">
+                        <div class="product-title">Vossen CV5 Silver</div>
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">₹440.00</div>
+                        <div class="button">
+                            <a href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <img src="web/images/wheels.png" alt="">
+                        <div class="product-title">Vossen VFS/1 Graphite</div>
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">₹520.00</div>
+                        <div class="button">
+                            <a href="">BUY NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5 align-items-center justify-content-center">
+                <div class="button">
+                    <a href="">Show More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner below products -->
+    <section class="">
+        <div class="bg-banner-div">
+            <img src="web/images/bg-2-1.jpg" alt="">
+            <div class="banner-beforeprd">
+                <span class="number">03</span>
+                <h1>Find Your Own <br>
+                    <span>Style</span>
+                </h1>
+                <h2>our professional team will help you
+                    choose perfect parts for
+                    your vehicle</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- quality-ctg -->
+    <section class="quality-ctg">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+
+                <!-- Row 1 -->
+                <div class="col-lg-6 order-1">
+                    <div class="row g-0">
+                        <div class="col-6 quality-div">
+                            <img src="web/images/qltyimg1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="content p-sm-4 px-2">
+                                <h5>The Highest Speed</h5>
+                                <h6>February 19, 2017</h6>
+                                <p>How do auto mechanics add more power to your vehicle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-2 order-3">
+                    <div class="row g-0">
+                        <div class="col-6 quality-div">
+                            <img src="web/images/qltyimg1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="content p-sm-4 px-2">
+                                <h5>Digging Audi Style</h5>
+                                <h6>February 18, 2017</h6>
+                                <p>2022 Audi R8, RS7 reveal new body styles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="col-lg-6 order-lg-3 order-2">
+                    <div class="row g-0">
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="content p-sm-4 px-2">
+                                <h5>Impala vs Camaro</h5>
+                                <h6>February 17, 2017</h6>
+                                <p>This is the competition we never get tired of.</p>
+                            </div>
+                        </div>
+                        <div class="col-6 quality-div">
+                            <img src="web/images/qltyimg1.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-4">
+                    <div class="row g-0 flex-row-reverse">
+                        <div class="col-6 quality-div">
+                            <img src="web/images/qltyimg1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="content p-sm-4 px-2">
+                                <h5>Corvette Experience</h5>
+                                <h6>February 16, 2017</h6>
+                                <p>Chevrolet surprises fans with new models.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- featured to AV cars part -->
+    <section class="bg-light">
+        <div class="welcome py-5">
+            <span class="welcome-number">04</span>
+            <h1>Featured
+                <span>Brands</span>
+            </h1>
+            <h2>trusted by thousands</h2>
+        </div>
+
+
+        <!-- brand logo  -->
+        <div class="brandlogo pb-5">
+            <div class="container">
+                <div class="parts-section">
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div d-none d-lg-block">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                    <div href="" class="parts-div d-none d-lg-block">
+                        <img src="web/images/brand-5-bg.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why us? testimonials -->
+
+    <section class="whyus">
+        <div class="bg-banner-div">
+            <img src="web/images/bg-3-1.jpg" alt="">
+            <div class="banner-beforeprd">
+                <h1>Why Us?<br>
+                    <span>Testimonials</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="g-4 autoplay">
+
+                <!-- Testimonial Card 1 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">John B. Walker</h5>
+                                <small class="text-muted">
+                                    LAWYER, NEW YORK
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I am grateful to the professional technical support team
+                            my ordering from the
+                            company. I like the service very much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">Chris Parker</h5>
+                                <small class="text-muted">
+                                    ARCHITECT, CHICAGO
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            After ordering from this company, I am definitely going
+                            to stay and become a regular. Loved the service and the
+                            quality of products. The website is super easy to
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 1 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">John B. Walker</h5>
+                                <small class="text-muted">
+                                    LAWYER, NEW YORK
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I am grateful to the professional technical support team
+                            who helped me with choosing and installing multiple
+                            products throughout the years of my ordering from the
+                            company. I like the service very much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">Chris Parker</h5>
+                                <small class="text-muted">
+                                    ARCHITECT, CHICAGO
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            After ordering from this company, I am definitely going
+                            to stay and become a regular. Loved the service and the
+                            quality of products. The website is super easy to
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 1 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">John B. Walker</h5>
+                                <small class="text-muted">
+                                    LAWYER, NEW YORK
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I am grateful to the professional technical support team
+                            who helped me with choosing and installing multiple
+                            products throughout the years of my ordering from the
+                            company. I like the service very much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">Chris Parker</h5>
+                                <small class="text-muted">
+                                    ARCHITECT, CHICAGO
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            After ordering from this company, I am definitely going
+                            to stay and become a regular. Loved the service and the
+                            quality of products. The website is super easy to
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="main-footer pt-5">
+        <div class="container">
+            <div class="row gy-4 footer-row">
+
+                <!-- Column 1 -->
+                <div class="col-xl-3 footer-col d-flex flex-column align-items-center ">
+                    <img src="web/images/carlogo.png" class="footer-logo" alt="logo">
+
+                    <p class="footer-text">
+                        Welcome to AutoParts - your brand new reliable car repair company.
+                        We provide the widest range of automotive maintenance and repair services.
+                    </p>
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Your Cart</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact footer-links">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                8500 Green Avenue Chicago, IL 60606
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bi bi-clock-history"></i>
+                                WH: 8.00 am - 8.00 pm</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-envelope-fill"></i>
+                                info@example.com</a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bi bi-telephone-fill"></i>
+                                1 800 123 4567</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container text-center">
+                © 2026 All Rights Reserved. Developed by
+                <a href="https://tssgtech.com/">Tssg-Tech</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="web/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
