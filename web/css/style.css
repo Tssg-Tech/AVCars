@@ -106,7 +106,7 @@ header .icons i {
 
 .menudiv {
     position: fixed;
-    top: -100%;
+    top: -100vh;
     left: 0;
     height: 100vh;
     width: 100%;
@@ -283,7 +283,7 @@ header .icons i {
 .hero-banner-div img {
     width: 100%;
     object-fit: cover;
-    height: 80vh;
+    height: 60vh;
 }
 
 .hero-banner-text {
