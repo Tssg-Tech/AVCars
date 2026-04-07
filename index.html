@@ -37,17 +37,163 @@
                         </ul>
                     </li>
                 </ul>
-                <i class="bi bi-three-dots menuicon d-md-none "></i>
+                <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>
             </div>
             <div class="icons d-flex gap-3">
                 <i class="bi bi-person-fill"></i>
                 <i class="bi bi-heart-fill"></i>
-                <i class="bi bi-cart-fill"></i>
+                <i class="bi bi-cart-fill" onclick="openAddToCart()"></i>
             </div>
         </div>
     </header>
 
+    <!-- mobile menu -->
+<div class="menudiv d-md-none">
+    <div class="closemenuicon">
+     <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+     </div>
+<ul class="menulist">
+    <img src="web/images/carlogo.png" class="py-5" width="100px" alt="">
+    <li><a href="">Home</a></li>
+    <li><a href="">Shop</a></li>
+    <li><a href="">About Us</a></li>
+    <li><a href="">Gallery</a></li>
+    <li><a href="">Contact Us</a></li>
+</ul>
+</div>
 
+ <!-- add to cart start -->
+<div class="addtocart">
+  <!-- Header -->
+  <div class="cart-header">
+    <h4>Add to Cart</h4>
+    <i class="bi bi-x-lg" onclick="closeAddToCart()"></i>
+  </div>
+
+  <!-- Cart Content -->
+  <div class="cart-body">
+
+    <!-- Services -->
+    <div class="servsection">
+      
+ <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹3,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+
+       <div class="cart-item">
+        <span>Vossen Precision VPS-312</span>
+        <div>
+          <span>₹36,000</span>
+          <i class="bi bi-trash3-fill"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Total Section -->
+    <div class="totalsection">
+      <div>
+        <span>Subtotal</span>
+        <span>₹6,000</span>
+      </div>
+      <div>
+        <span>Tax (5%)</span>
+        <span>₹300</span>
+      </div>
+      <div class="total">
+        <span>Total</span>
+        <span>₹6,300</span>
+      </div>
+
+      <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+  </div>
+</div>
+  <!-- add to cart end -->
     <!-- hero banner -->
     <div id="carouselExampleAutoplaying position-relative" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators d-none d-md-flex">
@@ -212,12 +358,12 @@
     </section>
 
     <!-- product section -->
-    <section class="my-5">
+    <section class="prdsection">
         <div class="container">
-            <div class="row gx-1 gy-5">
+            <div class="row gx-0 gy-3">
 
                 <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-6">
                     <div class="product-card">
                         <img src="web/images/wheels.png" alt="">
                         <div class="product-title">Vossen Precision VPS-312</div>
@@ -231,14 +377,14 @@
                         </div>
 
                         <div class="price">₹520.00</div>
-                        <div class="button">
+                        <div class="button d-none d-sm-flex">
                             <a href="">BUY NOW</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-6">
                     <div class="product-card">
                         <img src="web/images/wheels.png" alt="">
                         <div class="product-title">Vossen CV5 Silver</div>
@@ -252,14 +398,14 @@
                         </div>
 
                         <div class="price">₹440.00</div>
-                        <div class="button">
+                        <div class="button d-none d-sm-flex">
                             <a href="">BUY NOW</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-6">
                     <div class="product-card">
                         <img src="web/images/wheels.png" alt="">
                         <div class="product-title">Vossen VFS/1 Graphite</div>
@@ -273,14 +419,14 @@
                         </div>
 
                         <div class="price">₹520.00</div>
-                        <div class="button">
+                         <div class="button d-none d-sm-flex">
                             <a href="">BUY NOW</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 1 -->
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-6">
                     <div class="product-card">
                         <img src="web/images/wheels.png" alt="">
                         <div class="product-title">Vossen Precision VPS-312</div>
@@ -294,14 +440,14 @@
                         </div>
 
                         <div class="price">₹520.00</div>
-                        <div class="button">
+                        <div class="button d-none d-sm-flex">
                             <a href="">BUY NOW</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-6">
                     <div class="product-card">
                         <img src="web/images/wheels.png" alt="">
                         <div class="product-title">Vossen CV5 Silver</div>
@@ -315,14 +461,14 @@
                         </div>
 
                         <div class="price">₹440.00</div>
-                        <div class="button">
+                        <div class="button d-none d-sm-flex">
                             <a href="">BUY NOW</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-6">
                     <div class="product-card">
                         <img src="web/images/wheels.png" alt="">
                         <div class="product-title">Vossen VFS/1 Graphite</div>
@@ -336,7 +482,7 @@
                         </div>
 
                         <div class="price">₹520.00</div>
-                        <div class="button">
+                        <div class="button d-none d-sm-flex">
                             <a href="">BUY NOW</a>
                         </div>
                     </div>
@@ -351,7 +497,7 @@
     </section>
 
     <!-- banner below products -->
-    <section class="">
+    <section class="bannerbelow">
         <div class="bg-banner-div">
             <img src="web/images/bg-2-1.jpg" alt="">
             <div class="banner-beforeprd">
@@ -726,7 +872,7 @@
             </div>
         </div>
     </footer>
-
+<div class="blur-overlay"></div>
     <script src="web/script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
