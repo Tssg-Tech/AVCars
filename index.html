@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +54,7 @@
      <i class="bi bi-x-lg" onclick="closeMenu()"></i>
      </div>
 <ul class="menulist">
-    <img src="web/images/carlogo.png" class="py-5" width="100px" alt="">
+    <img src="web/images/carlogo.png" class="py-4" width="100px" alt="">
     <li><a href="">Home</a></li>
     <li><a href="">Shop</a></li>
     <li><a href="">About Us</a></li>
@@ -195,7 +196,7 @@
 </div>
   <!-- add to cart end -->
     <!-- hero banner -->
-    <div id="carouselExampleAutoplaying position-relative" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel">
         <div class="carousel-indicators d-none d-md-flex">
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -210,9 +211,9 @@
                     <img src="web/images/herobannerimg1.jpg" alt="">
                     <div class="hero-banner-text">
                         <div class="container">
-                            <h1><span>The World's </span>Best</h1>
-                            <h2>auto parts</h2>
-                            <p class="d-none d-md-block">we are the leading auto parts company with the world-wide
+                            <h1 data-aos="fade-right"><span>The World's </span>Best</h1>
+                            <h2 data-aos="fade-left" data-aos-delay="300">auto parts</h2>
+                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading auto parts company with the world-wide
                                 reputation of premium quality
                             </p>
                             <div class="button d-none d-md-block">
@@ -227,9 +228,9 @@
                     <img src="web/images/herobannerimg2.jpg" alt="">
                     <div class="hero-banner-text">
                         <div class="container">
-                            <h1><span>Premium </span>Goods</h1>
-                            <h2>for racers</h2>
-                            <p class="d-none d-md-block">we are the leading auto parts company with the world-wide
+                            <h1 data-aos="fade-right"><span>Premium </span>Goods</h1>
+                            <h2 data-aos="fade-left" data-aos-delay="300">for racers</h2>
+                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading auto parts company with the world-wide
                                 reputation of premium quality
                             </p>
                             <div class="button d-none d-md-block">
@@ -244,9 +245,9 @@
                     <img src="web/images/herobannerimg3.jpg" alt="">
                     <div class="hero-banner-text">
                         <div class="container">
-                            <h1><span>WIDE </span>Selection</h1>
-                            <h2>of items</h2>
-                            <p class="d-none d-md-block">we are the leading auto parts company with the world-wide
+                            <h1 data-aos="fade-right"><span>WIDE </span>Selection</h1>
+                            <h2 data-aos="fade-left" data-aos-delay="300">of items</h2>
+                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading auto parts company with the world-wide
                                 reputation of premium quality
                             </p>
                             <div class="button d-none d-md-block">
@@ -881,6 +882,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+           var carousel = document.querySelector('#carouselExampleAutoplaying');
+
+carousel.addEventListener('slid.bs.carousel', function () {
+  
+  // Remove AOS animation classes
+  document.querySelectorAll('[data-aos]').forEach(function(el) {
+    el.classList.remove('aos-animate');
+  });
+
+  // Force reflow (important trick)
+  void document.body.offsetWidth;
+
+  // Re-trigger AOS
+  document.querySelectorAll('.carousel-item.active [data-aos]').forEach(function(el) {
+    el.classList.add('aos-animate');
+  });
+
+});
+AOS.init({
+  once: false   // allows animation every time slide appears
+});
+
+</script>
     <script>
         $('.autoplay').slick({
             slidesToShow: 2,
