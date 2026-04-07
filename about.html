@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV CARPART | HOME</title>
+    <link rel="icon" type="image/png" href="web/images/carlogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="web/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- fixed social media linkes -->
+    <div class="sociallinkes">
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/your-number" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <header>
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="d-flex gap-3 align-items-center justify-content-start">
+                <img src="web/images/carlogo.png" width="100px" alt="">
+                <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
+                    <li><a href="" class="active">HOME</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="#">GALLERY</a></li>
+                            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>
+            </div>
+            <div class="icons d-flex gap-3">
+                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-heart-fill"></i>
+                <i class="bi bi-cart-fill" onclick="openAddToCart()"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu -->
+    <div class="menudiv d-md-none">
+        <div class="closemenuicon">
+            <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+        </div>
+        <ul class="menulist">
+            <img src="web/images/carlogo.png" class="py-4" width="100px" alt="">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- add to cart start -->
+    <div class="addtocart">
+        <!-- Header -->
+        <div class="cart-header">
+            <h4>Add to Cart</h4>
+            <i class="bi bi-x-lg" onclick="closeAddToCart()"></i>
+        </div>
+
+        <!-- Cart Content -->
+        <div class="cart-body">
+
+            <!-- Services -->
+            <div class="servsection">
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹36,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Section -->
+            <div class="totalsection">
+                <div>
+                    <span>Subtotal</span>
+                    <span>₹6,000</span>
+                </div>
+                <div>
+                    <span>Tax (5%)</span>
+                    <span>₹300</span>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span>₹6,300</span>
+                </div>
+
+                <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- small banner -->
+    <div class="smallbanner">
+        <img src="web/images/smallbnrimg.jpg" alt="">
+        <div class="smallbanner-text">
+            <div class="container">
+                <h1>About Us</h1>
+                <h6>HOME / ABOUT US</h6>
+            </div>
+        </div>
+    </div>
+
+    <!-- welocme to AV cars part -->
+    <section class="welcome py-5 bg-light">
+        <span class="welcome-number">01</span>
+        <h1>Who WE <br>
+            <span>Are</span>
+        </h1>
+        <h2>Some facts about us</h2>
+    </section>
+
+    <section class=" pb-5 bg-light">
+        <div class="container bg-white rounded-3 aboutus">
+            <div class="row p-lg-5 p-3 gx-lg-5 gx-3">
+                <div class="col-md-6 ">
+                    <div>
+                        <h2>General Information</h2>
+                        <h6>SUCCESS STORY</h6>
+                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam
+                            repellendus
+                            excepturi totam consequuntur, quas esse eveniet dolores exercitationem officia praesentium
+                            vitae
+                            veniam eligendi reprehenderit! Provident odio animi tempore accusamus optio, similique porro
+                            cupiditate quia consequatur fuga? Rem voluptas iure voluptatibus quisquam dignissimos nulla,
+                            iste in nostrum numquam obcaecati, repellendus explicabo vel aut eaque tempora hic,
+                            perspiciatis
+                            atque reprehenderit assumenda.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div>
+                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam
+                            repellendus
+                            excepturi totam consequuntur, quas esse eveniet dolores exercitationem officia praesentium
+                            vitae
+                            .</p>
+                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque commodi
+                            consequatur dolore
+                            animi voluptatibus nobis, ipsam, amet iure earum ratione, distinctio deleniti quos ipsum
+                            officiis nesciunt. Rerum, consectetur nihil, recusandae odit praesentium tenetur qui
+                            doloremque
+                            eaque fuga perferendis velit aspernatur excepturi quaerat maxime fugiat eveniet cum deleniti
+                            harum! Tenetur ratione vitae assumenda consequatur harum vel, corporis eligendi eos ut!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why us? testimonials -->
+    <section class="whyus">
+        <div class="bg-banner-div">
+            <img src="web/images/bg-3-1.jpg" alt="">
+            <div class="banner-beforeprd">
+                <h1>Why Us?<br>
+                    <span>Testimonials</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="g-4 autoplay">
+
+                <!-- Testimonial Card 1 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">John B. Walker</h5>
+                                <small class="text-muted">
+                                    LAWYER, NEW YORK
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I am grateful to the professional technical support team
+                            my ordering from the
+                            company. I like the service very much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">Chris Parker</h5>
+                                <small class="text-muted">
+                                    ARCHITECT, CHICAGO
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            After ordering from this company, I am definitely going
+                            to stay and become a regular. Loved the service and the
+                            quality of products. The website is super easy to
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 1 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">John B. Walker</h5>
+                                <small class="text-muted">
+                                    LAWYER, NEW YORK
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I am grateful to the professional technical support team
+                            who helped me with choosing and installing multiple
+                            products throughout the years of my ordering from the
+                            company. I like the service very much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">Chris Parker</h5>
+                                <small class="text-muted">
+                                    ARCHITECT, CHICAGO
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            After ordering from this company, I am definitely going
+                            to stay and become a regular. Loved the service and the
+                            quality of products. The website is super easy to
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 1 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">John B. Walker</h5>
+                                <small class="text-muted">
+                                    LAWYER, NEW YORK
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            I am grateful to the professional technical support team
+                            who helped me with choosing and installing multiple
+                            products throughout the years of my ordering from the
+                            company. I like the service very much.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="p-2">
+                    <div class="testimonial-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="web/images/tstimg1.jpg" class="testimonial-img me-3" alt="Client">
+
+                            <div>
+                                <h5 class="mb-0">Chris Parker</h5>
+                                <small class="text-muted">
+                                    ARCHITECT, CHICAGO
+                                </small>
+                            </div>
+                        </div>
+
+                        <p class="testimonial-text">
+                            After ordering from this company, I am definitely going
+                            to stay and become a regular. Loved the service and the
+                            quality of products. The website is super easy to
+                            navigate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what we do -->
+    <section class="welcome py-5 bg-light">
+        <span class="welcome-number">03</span>
+        <h1>what we <br>
+            <span>Do</span>
+        </h1>
+        <h2>our services</h2>
+    </section>
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="row autoplay2">
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
+                        <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
+                        <h3>Installation and Maintenance</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
+                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                    </div>
+                </div>
+                 <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
+                        <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
+                        <h3>Installation and Maintenance</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
+                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                    </div>
+                </div>
+                 <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
+                        <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
+                        <h3>Installation and Maintenance</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
+                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                    </div>
+                </div>
+                 <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
+                        <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
+                        <h3>Installation and Maintenance</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
+                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- banner below products -->
+    <section class="bannerbelow">
+        <div class="bg-banner-div">
+            <img src="web/images/bg-2-1.jpg" alt="">
+            <div class="banner-beforeprd">
+                <span class="number">04</span>
+                <h1>Find Your Own <br>
+                    <span>Style</span>
+                </h1>
+                <h2>our professional team will help you
+                    choose perfect parts for
+                    your vehicle</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured to AV cars part -->
+    <section class="welcome py-5 bg-light">
+        <span class="welcome-number">05</span>
+        <h1>Our <br>
+            <span>Partners</span>
+        </h1>
+
+        <h2>trusted by thousands</h2>
+    </section>
+
+
+    <!-- brand logo  -->
+    <section class="brandlogo pb-5 bg-light">
+        <div class="container">
+            <div class="parts-section overflow-hidden">
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div d-none d-lg-block" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+                <div href="" class="parts-div d-none d-lg-block" data-aos="flip-up">
+                    <img src="web/images/brand-5-bg.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="main-footer pt-5">
+        <div class="container">
+            <div class="row gy-4 footer-row">
+
+                <!-- Column 1 -->
+                <div class="col-xl-3 footer-col d-flex flex-column align-items-center ">
+                    <img src="web/images/carlogo.png" class="footer-logo" alt="logo">
+
+                    <p class="footer-text">
+                        Welcome to AutoParts - your brand new reliable car repair company.
+                        We provide the widest range of automotive maintenance and repair services.
+                    </p>
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Your Cart</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact footer-links">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                8500 Green Avenue Chicago, IL 60606
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bi bi-clock-history"></i>
+                                WH: 8.00 am - 8.00 pm</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-envelope-fill"></i>
+                                info@example.com</a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bi bi-telephone-fill"></i>
+                                1 800 123 4567</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container text-center">
+                © 2026 All Rights Reserved. Developed by
+                <a href="https://tssgtech.com/">Tssg-Tech</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="blur-overlay"></div>
+    <script src="web/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+
+    </script>
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+
+            ]
+        });
+        $('.autoplay2').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                 {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
