@@ -562,7 +562,11 @@ transform: translate(-50%, -50%); */
         font-size: 14em;
     }
 }
-
+@media (max-width:768px) {
+.bg-banner-div img {
+    height: 100vh;
+}
+}
 @media (max-width:576px) {
     .banner-aboveprd h1 {
         font-size: 3rem;
