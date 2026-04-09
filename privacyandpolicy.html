@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV CARPART | HOME</title>
+    <link rel="icon" type="image/png" href="web/images/carlogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="web/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- fixed social media linkes -->
+    <div class="sociallinkes">
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/your-number" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+   <header>
+        <div class="container py-2 d-flex align-items-center justify-content-between">
+            <!-- <div class="d-flex gap-3 align-items-center justify-content-start"> -->
+                <div class="d-flex gap-3 align-items-center justify-content-start">
+                <a href="index.html"><img src="web/images/carlogo.png" width="100px" alt=""></a>
+             <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>    
+            </div>
+                <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                            <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+            <!-- </div> -->
+            <div class="icons d-flex gap-3">
+                <i class="bi bi-person-fill"></i>
+                <i class="bi bi-heart-fill"></i>
+                <i class="bi bi-cart-fill" onclick="openAddToCart()"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile menu -->
+    <div class="menudiv d-md-none">
+    <div class="closemenuicon">
+     <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+     </div>
+<ul class="menulist">
+    <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+
+    <!-- add to cart start -->
+    <div class="addtocart">
+        <!-- Header -->
+        <div class="cart-header">
+            <h4>Add to Cart</h4>
+            <i class="bi bi-x-lg" onclick="closeAddToCart()"></i>
+        </div>
+
+        <!-- Cart Content -->
+        <div class="cart-body">
+
+            <!-- Services -->
+            <div class="servsection">
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹36,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Section -->
+            <div class="totalsection">
+                <div>
+                    <span>Subtotal</span>
+                    <span>₹6,000</span>
+                </div>
+                <div>
+                    <span>Tax (5%)</span>
+                    <span>₹300</span>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span>₹6,300</span>
+                </div>
+
+                <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- small banner -->
+    <div class="smallbanner">
+        <img src="web/images/smallbnrimg.jpg" alt="">
+        <div class="smallbanner-text">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+                <h6>HOME / PRIVACY POLICY</h6>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- privacy section -->
+  <section class="privacy-section py-5">
+
+    <div class="container">
+
+        <div class="privacy-box">
+
+            <h2 class="privacy-title">
+                Privacy Policy
+            </h2>
+
+            <p class="privacy-date">
+                Last Updated: January 2026
+            </p>
+
+            <!-- INTRO -->
+            <p>
+                Welcome to AutoParts. Your privacy is very important to us. This Privacy Policy explains how we collect,
+                use, and protect your information when you use our website.
+            </p>
+
+            <!-- INFORMATION WE COLLECT -->
+            <h4>1. Information We Collect</h4>
+            <p>
+                We may collect personal information such as your name, email address, phone number, billing details,
+                and shipping address when you place an order or contact us.
+            </p>
+
+            <!-- HOW WE USE -->
+            <h4>2. How We Use Your Information</h4>
+            <ul>
+                <li>To process your orders and payments</li>
+                <li>To improve our website and services</li>
+                <li>To send order updates and promotional offers</li>
+                <li>To respond to your queries</li>
+            </ul>
+
+            <!-- DATA PROTECTION -->
+            <h4>3. Data Protection</h4>
+            <p>
+                We implement strong security measures to protect your personal information from unauthorized access,
+                misuse, or disclosure.
+            </p>
+
+            <!-- COOKIES -->
+            <h4>4. Cookies</h4>
+            <p>
+                Our website uses cookies to enhance user experience. Cookies help us understand user behavior and
+                improve our services.
+            </p>
+
+            <!-- THIRD PARTY -->
+            <h4>5. Third-Party Services</h4>
+            <p>
+                We may use third-party services such as payment gateways and analytics tools. These services have their
+                own privacy policies.
+            </p>
+
+            <!-- USER RIGHTS -->
+            <h4>6. Your Rights</h4>
+            <p>
+                You have the right to access, update, or delete your personal information at any time by contacting us.
+            </p>
+
+            <!-- POLICY CHANGES -->
+            <h4>7. Changes to This Policy</h4>
+            <p>
+                We may update this Privacy Policy from time to time. Any changes will be posted on this page.
+            </p>
+
+            <!-- CONTACT -->
+            <h4>8. Contact Us</h4>
+            <p>
+                If you have any questions regarding this Privacy Policy, please contact us at:
+                <br>
+                Email: info@example.com
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- footer -->
+    <footer class="main-footer pt-5">
+        <div class="container">
+            <div class="row gy-4 footer-row">
+
+                <!-- Column 1 -->
+                <div class="col-xl-3 footer-col d-flex flex-column align-items-center ">
+                    <a href="index.html"></a><img src="web/images/carlogo.png" class="footer-logo" alt="logo">
+
+                    <p class="footer-text">
+                        Welcome to AutoParts - your brand new reliable car repair company.
+                        We provide the widest range of automotive maintenance and repair services.
+                    </p>
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacyandpolicy.html">Privacy Policy</a></li>
+                        <li><a href="termscondition.html">Terms & Conditions</a></li>
+                        <li><a href="returnexchange.html">Returns & Exchanges</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-xl-3 col-lg-4 footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact footer-links">
+                        <li>
+                            <a href="">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                8500 Green Avenue Chicago, IL 60606
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-clock-history"></i>
+                                WH: 8.00 am - 8.00 pm</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="bi bi-envelope-fill"></i>
+                                info@example.com</a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="bi bi-telephone-fill"></i>
+                                1 800 123 4567</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container text-center">
+                © 2026 All Rights Reserved. Developed by
+                <a href="https://tssgtech.com/">Tssg-Tech</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="blur-overlay"></div>
+    <script src="web/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

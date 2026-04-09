@@ -1,3 +1,17 @@
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 100) {
+        header.classList.add("scrolling");
+    }
+  else{
+     header.classList.remove("scrolling");
+  }
+   
+
+});
+
 let menudiv = document.querySelector(".menudiv");
 
 function openMenu() {

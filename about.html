@@ -28,26 +28,29 @@
         <a href="https://wa.me/your-number" target="_blank"><i class="bi bi-whatsapp"></i></a>
     </div>
 
-    <header>
-        <div class="container-fluid d-flex align-items-center justify-content-between">
-            <div class="d-flex gap-3 align-items-center justify-content-start">
-                <img src="web/images/carlogo.png" width="100px" alt="">
+   <header>
+        <div class="container py-2 d-flex align-items-center justify-content-between">
+            <!-- <div class="d-flex gap-3 align-items-center justify-content-start"> -->
+                <div class="d-flex gap-3 align-items-center justify-content-start">
+                <a href="index.html"><img src="web/images/carlogo.png" width="100px" alt=""></a>
+             <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>    
+            </div>
                 <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
-                    <li><a href="" class="active">HOME</a></li>
-                    <li><a href="">SHOP</a></li>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             MENU
                         </a>
                         <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="#">ABOUT US</a></li>
-                            <li><a class="dropdown-item" href="#">GALLERY</a></li>
-                            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                            <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
                         </ul>
                     </li>
                 </ul>
-                <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>
-            </div>
+               
+            <!-- </div> -->
             <div class="icons d-flex gap-3">
                 <i class="bi bi-person-fill"></i>
                 <i class="bi bi-heart-fill"></i>
@@ -58,18 +61,18 @@
 
     <!-- mobile menu -->
     <div class="menudiv d-md-none">
-        <div class="closemenuicon">
-            <i class="bi bi-x-lg" onclick="closeMenu()"></i>
-        </div>
-        <ul class="menulist">
-            <img src="web/images/carlogo.png" class="py-4" width="100px" alt="">
-            <li><a href="">Home</a></li>
-            <li><a href="">Shop</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-    </div>
+    <div class="closemenuicon">
+     <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+     </div>
+<ul class="menulist">
+    <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
 
     <!-- add to cart start -->
     <div class="addtocart">
@@ -231,7 +234,7 @@
                     <div>
                         <h2>General Information</h2>
                         <h6>SUCCESS STORY</h6>
-                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam
                             repellendus
                             excepturi totam consequuntur, quas esse eveniet dolores exercitationem officia praesentium
                             vitae
@@ -244,12 +247,12 @@
                 </div>
                 <div class="col-md-6 ">
                     <div>
-                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, numquam
                             repellendus
                             excepturi totam consequuntur, quas esse eveniet dolores exercitationem officia praesentium
                             vitae
                             .</p>
-                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque commodi
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque commodi
                             consequatur dolore
                             animi voluptatibus nobis, ipsam, amet iure earum ratione, distinctio deleniti quos ipsum
                             officiis nesciunt. Rerum, consectetur nihil, recusandae odit praesentium tenetur qui
@@ -428,39 +431,51 @@
         <h2>our services</h2>
     </section>
 
-    <section class="bg-light">
+    <section class="bg-light pb-5">
         <div class="container">
-            <div class="row autoplay2">
-                <div class="col-4">
+            <div class="autoplay2">
+                <div class="px-3 wwdo">
                     <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
                         <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
-                        <h3>Installation and Maintenance</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
-                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        <div class="px-2">
+                            <h3>Installation and Maintenance</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque
+                                    corrupti
+                                    officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        </div>
                     </div>
                 </div>
-                 <div class="col-4">
+               <div class="px-3 wwdo">
                     <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
                         <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
-                        <h3>Installation and Maintenance</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
-                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        <div class="px-2">
+                            <h3>Installation and Maintenance</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque
+                                    corrupti
+                                    officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        </div>
                     </div>
                 </div>
-                 <div class="col-4">
+                <div class="px-3 wwdo">
                     <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
                         <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
-                        <h3>Installation and Maintenance</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
-                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        <div class="px-2">
+                            <h3>Installation and Maintenance</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque
+                                    corrupti
+                                    officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        </div>
                     </div>
                 </div>
-                 <div class="col-4">
+               <div class="px-3 wwdo">
                     <div class="d-flex align-items-center justify-content-center flex-column text-center gap-3">
                         <img src="web/images/qltyimg1.jpg" class="img-fluid" alt="">
-                        <h3>Installation and Maintenance</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque corrupti
-                                officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        <div class="px-2">
+                            <h3>Installation and Maintenance</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam cumque
+                                    corrupti
+                                    officiis distinctio unde blanditiis debitis ab deleniti sit!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -542,7 +557,7 @@
 
                 <!-- Column 1 -->
                 <div class="col-xl-3 footer-col d-flex flex-column align-items-center ">
-                    <img src="web/images/carlogo.png" class="footer-logo" alt="logo">
+                    <a href="index.html"></a><img src="web/images/carlogo.png" class="footer-logo" alt="logo">
 
                     <p class="footer-text">
                         Welcome to AutoParts - your brand new reliable car repair company.
@@ -556,10 +571,10 @@
                     <h4 class="footer-title">Customer Service</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -567,10 +582,10 @@
                 <div class="col-xl-3 col-lg-4 footer-col">
                     <h4 class="footer-title">Information</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Returns & Exchanges</a></li>
-                        <li><a href="#">Your Cart</a></li>
+                        <li><a href="privacyandpolicy.html">Privacy Policy</a></li>
+                        <li><a href="termscondition.html">Terms & Conditions</a></li>
+                        <li><a href="returnexchange.html">Returns & Exchanges</a></li>
+                        <li><a href="#">Wishlist</a></li>
                         <li><a href="#">Login</a></li>
                     </ul>
                 </div>
@@ -587,7 +602,7 @@
                         </li>
 
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <i class="bi bi-clock-history"></i>
                                 WH: 8.00 am - 8.00 pm</a>
                         </li>
@@ -628,11 +643,7 @@
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-
-        AOS.init();
-
-    </script>
+   
     <script>
         $('.autoplay').slick({
             slidesToShow: 2,
@@ -665,7 +676,7 @@
                         slidesToShow: 2,
                     }
                 },
-                 {
+                {
                     breakpoint: 576,
                     settings: {
                         slidesToShow: 1,
@@ -674,6 +685,9 @@
 
             ]
         });
+    </script>
+     <script>
+       AOS.init();
     </script>
 </body>
 
