@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Cancel Order Modal</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+
+    body {
+      background: linear-gradient(135deg,#eef2f7,#f9fafc);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .zbxr-btn {
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .zbxr-btn-primary {
+      background: linear-gradient(135deg,#111,#333);
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .zbxr-btn-primary:hover { transform: translateY(-2px); }
+
+    .zbxr-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 999;
+    }
+
+    .zbxr-modal-active { display: flex; }
+
+    .zbxr-modal-box {
+      background: #fff;
+      width: 100%;
+      max-width: 520px;
+      border-radius: 24px;
+      padding: 0;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+      animation: zbxrFade 0.25s ease;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    @keyframes zbxrFade {
+      from { opacity:0; transform: scale(.92);} to {opacity:1; transform: scale(1);} }
+
+    .zbxr-header {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:18px 20px;
+      border-bottom:1px solid #eee;
+    }
+
+    .zbxr-header h2 { font-size:20px; font-weight:600; }
+
+    .zbxr-close { font-size:22px; color:#888; background:none; cursor:pointer; }
+
+    .zbxr-product {
+      display:flex; gap:14px; margin-bottom:18px; padding:10px; border-radius:16px; background:#fafafa;
+    }
+
+    .zbxr-product img {
+      width:85px; height:85px; border-radius:12px; object-fit:cover; background:#eee;
+    }
+
+    .zbxr-product h3 { font-size:15px; font-weight:600; }
+    .zbxr-product p { font-size:12px; color:#777; }
+
+    .zbxr-price { font-weight:600; margin-top:6px; }
+
+    .zbxr-label { font-size:13px; margin:12px 0 6px; font-weight:600; }
+
+    .zbxr-input, .zbxr-textarea {
+      width:100%; padding:11px; border-radius:12px; border:1px solid #ddd; font-size:13px;
+      transition:.2s;
+    }
+
+    .zbxr-input:focus, .zbxr-textarea:focus { border-color:#000; outline:none; }
+
+    .zbxr-textarea { height:80px; resize:none; }
+
+    /* Premium Payment Section */
+    .zbxr-payment {
+      margin-top:10px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .zbxr-pay-option {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px;
+      border-radius:14px;
+      border:1px solid #ddd;
+      cursor:pointer;
+      transition:.25s;
+      background:#fff;
+    }
+
+    .zbxr-pay-option:hover { border-color:#000; }
+
+    .zbxr-pay-left { display:flex; align-items:center; gap:10px; }
+
+    .zbxr-radio {
+      width:18px; height:18px; border-radius:50%; border:2px solid #aaa; position:relative;
+    }
+
+    .zbxr-pay-option.active .zbxr-radio {
+      border-color:#000;
+    }
+
+    .zbxr-pay-option.active .zbxr-radio::after {
+      content:''; position:absolute; inset:3px; background:#000; border-radius:50%;
+    }
+
+    .zbxr-pay-title { font-size:13px; font-weight:600; }
+    .zbxr-pay-desc { font-size:11px; color:#777; }
+
+    .zbxr-actions {
+      display:flex; justify-content:flex-end; gap:10px;
+      padding:16px 20px;
+      border-top:1px solid #eee;
+      background:#fff;
+    }
+
+    .zbxr-btn-cancel { background:#eee; }
+
+    .zbxr-btn-danger {
+      background:linear-gradient(135deg,#e53935,#b71c1c);
+      color:#fff;
+    }
+
+    .zbxr-btn-danger:hover { transform:translateY(-1px); }
+
+    @media(max-width:480px){
+      .zbxr-modal-box{padding:16px}
+      .zbxr-product img{width:70px;height:70px}
+    }
+  .zbxr-body{padding:18px 20px; overflow-y:auto; flex:1;} 
+
+    </style>
+</head>
+<body>
+
+<button class="zbxr-btn zbxr-btn-primary" onclick="zbxrOpenModal()">Cancel Order</button>
+
+<div class="zbxr-modal" id="zbxrModal">
+  <div class="zbxr-modal-box">
+
+    <div class="zbxr-header">
+      <h2>Cancel Order</h2>
+      <button class="zbxr-close" onclick="zbxrCloseModal()">&times;</button>
+    </div>
+
+    <div class="zbxr-body">
+      <div class="zbxr-product">
+        <img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?w=200" onerror="this.src='https://via.placeholder.com/100'" />
+        <div>
+          <h3>Premium Wireless Headphones</h3>
+          <p>Order ID: #123456</p>
+          <div class="zbxr-price">₹2,999</div>
+        </div>
+      </div>
+
+      <label class="zbxr-label">Reason for Cancellation</label>
+      <select class="zbxr-input">
+        <option>Select reason</option>
+        <option>Ordered by mistake</option>
+        <option>Found cheaper elsewhere</option>
+        <option>Delivery too slow</option>
+        <option>Other</option>
+      </select>
+
+      <label class="zbxr-label">Additional Notes</label>
+      <textarea class="zbxr-textarea" placeholder="Tell us more..."></textarea>
+
+      <label class="zbxr-label">Refund Method</label>
+      <div class="zbxr-payment">
+
+        <div class="zbxr-pay-option active" onclick="zbxrSelect(this)">
+          <div class="zbxr-pay-left">
+            <div class="zbxr-radio"></div>
+            <div>
+              <div class="zbxr-pay-title">Original Payment Method</div>
+              <div class="zbxr-pay-desc">Refund to card / UPI / bank</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="zbxr-pay-option" onclick="zbxrSelect(this)">
+          <div class="zbxr-pay-left">
+            <div class="zbxr-radio"></div>
+            <div>
+              <div class="zbxr-pay-title">Wallet Credit</div>
+              <div class="zbxr-pay-desc">Instant refund to app wallet</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="zbxr-actions">
+      <button class="zbxr-btn zbxr-btn-cancel" onclick="zbxrCloseModal()">Keep Order</button>
+      <button class="zbxr-btn zbxr-btn-danger">Confirm Cancel</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function zbxrOpenModal(){ document.getElementById('zbxrModal').classList.add('zbxr-modal-active'); }
+  function zbxrCloseModal(){ document.getElementById('zbxrModal').classList.remove('zbxr-modal-active'); }
+
+  function zbxrSelect(el){
+    document.querySelectorAll('.zbxr-pay-option').forEach(e=>e.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
