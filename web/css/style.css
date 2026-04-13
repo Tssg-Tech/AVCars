@@ -18,12 +18,12 @@ li {
 }
 
 ul {
-    padding-left: 0;
-    margin-bottom: 0;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .button {
@@ -651,11 +651,34 @@ height: 100%;
     background-color: rgb(224, 224, 224);
 }
 
+.onprd{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.4s;
+   font-size: 1.5rem;
+    /* color: var(--clr-white);
+    background-color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    padding: 0.5rem;
+    border-radius: 5px; */
+}
 .product-card img {
     width: 100%;
     height: auto;
     /* margin-bottom: 15px; */
 }
+.product-card:hover .onprd{
+opacity: 1;
+visibility: visible;
+}
+
 
 .product-title {
     font-size: 18px;
@@ -673,11 +696,19 @@ height: 100%;
     margin-bottom: 15px;
 }
 
+@media (max-width:768px) {
+    .onprd{
+   opacity: 1;
+   visibility: unset;
+   font-size: 14px;
+   top: 4px;
+}
+}
+
 @media (max-width:576px) {
     .product-card {
         padding: 0 4px 4px 4px;
     }
-
     .product-title {
         font-size: 12px;
         margin-bottom: 0;
@@ -1234,7 +1265,7 @@ width: 100%;
 .shop-section .dropdown-menu {
     border-radius: 8px;
     padding: 10px 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .shop-section .dropdown-item {
@@ -1556,6 +1587,19 @@ textarea.custom-input {
     font-weight: 500;
     font-size: 12px;
 }
+.whichside span{
+border: 1.5px solid black;
+border-radius: 10px;
+padding: 0.25rem 0.75rem;
+font-size: 14px;
+background-color: var(--clr-white);
+cursor: pointer;
+}
+.whichside span.activecls, .whichside span:hover{
+background-color: var(--clr-black);
+color: var(--clr-white);
+
+}
 .rating_product > span {
     background-color: #fc9902;
     padding: 1px 5px;
@@ -1629,4 +1673,26 @@ padding:0 0.5rem;
     scroll-behavior: smooth;
 
 }
+}
+
+
+/* login page  */
+.login-section {
+    background: #f8f9fa;
+}
+
+.login-box {
+    border-radius: 10px;
+}
+
+.login-box h3 {
+    font-weight: 600;
+}
+
+.login-box .btn {
+    padding: 10px;
+    font-size: 16px;
+}
+.login-box a{
+    color: var(--clr-sky);
 }

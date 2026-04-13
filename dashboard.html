@@ -2,76 +2,76 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AV CARPART | HOME</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AV CARPART | HOME</title>
     <link rel="icon" type="image/png" href="web/images/carlogo.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="assets/CSS/New-Drop.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/CSS/New-Drop.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="web/css/style.css">
 </head>
 
 <body>
 
- <!-- fixed social media linkes -->
-      <div class="sociallinkes">
+    <!-- fixed social media linkes -->
+    <div class="sociallinkes">
         <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
         <a href="https://wa.me/your-number" target="_blank"><i class="bi bi-whatsapp"></i></a>
     </div>
 
-   <header>
+    <header>
         <div class="container py-2 d-flex align-items-center justify-content-between">
             <!-- <div class="d-flex gap-3 align-items-center justify-content-start"> -->
-                <div class="d-flex gap-3 align-items-center justify-content-start">
+            <div class="d-flex gap-3 align-items-center justify-content-start">
                 <a href="index.html"><img src="web/images/carlogo.png" width="100px" alt=""></a>
-             <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>    
+                <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>
             </div>
-                <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="shop.html">SHOP</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            MENU
-                        </a>
-                        <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
-                            <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
-                            <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
-                        </ul>
-                    </li>
-                </ul>
-               
+            <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        MENU
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                        <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+            </ul>
+
             <!-- </div> -->
             <div class="icons d-flex gap-3">
-                <i class="bi bi-person-fill"></i>
+                <a href="login.html"><i class="bi bi-person-fill"></i></a>
                 <a href="wishlist.html"><i class="bi bi-heart-fill"></i></a>
                 <i class="bi bi-cart-fill" onclick="openAddToCart()"></i>
             </div>
         </div>
     </header>
 
-     <!-- mobile menu -->
-      <div class="menudiv d-md-none">
-    <div class="closemenuicon">
-     <i class="bi bi-x-lg" onclick="closeMenu()"></i>
-     </div>
-<ul class="menulist">
-    <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-</ul>
-</div>
+    <!-- mobile menu -->
+    <div class="menudiv d-md-none">
+        <div class="closemenuicon">
+            <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+        </div>
+        <ul class="menulist">
+            <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
 
-     <!-- add to cart start -->
-       <div class="addtocart">
+    <!-- add to cart start -->
+    <div class="addtocart">
         <!-- Header -->
         <div class="cart-header">
             <h4>Add to Cart</h4>
@@ -203,8 +203,8 @@
         </div>
     </div>
 
-     <!-- small banner -->
-       <div class="smallbanner">
+    <!-- small banner -->
+    <div class="smallbanner">
         <img src="web/images/smallbnrimg.jpg" alt="">
         <div class="smallbanner-text">
             <div class="container">
@@ -214,95 +214,95 @@
         </div>
     </div>
 
-<!-- dashboard section -->
-      <div class="brx-dashboard-wrapper">
+    <!-- dashboard section -->
+    <div class="brx-dashboard-wrapper">
         <!-- Overlay -->
         <div class="brx-sidebar-overlay d-lg-none" id="brxSidebarOverlay"></div>
 
         <div class="brx-dashboard-container">
-          <!-- Sidebar -->
-          <aside class="brx-dashboard-sidebar" id="brxSidebar">
-            <div class="brx-user-box">
-              <img src="assets/payment-images/user-img.jpeg" class="brx-user-avatar" />
-              <h4>Hi Saloni !</h4>
-              <!-- <p>Frontend Developer</p> -->
-            </div>
+            <!-- Sidebar -->
+            <aside class="brx-dashboard-sidebar" id="brxSidebar">
+                <div class="brx-user-box">
+                    <img src="assets/payment-images/user-img.jpeg" class="brx-user-avatar" />
+                    <h4>Hi Saloni !</h4>
+                    <!-- <p>Frontend Developer</p> -->
+                </div>
 
-            <ul class="brx-sidebar-menu">
-              <a href="profile.html">
-                <li><i class="bi bi-person"></i> Profile</li>
-              </a>
-              <a href="orders.html">
-                <li><i class="bi bi-box"></i> Orders</li>
-              </a>
-              <a href="wishlist.html">
-                <li><i class="bi bi-heart"></i> Wishlist</li>
-              </a>
-              <a href="addresses.html">
-                <li><i class="bi bi-geo-alt"></i> Address</li>
-              </a>
-              <a href="return-product.html">
-                <li><i class="bi bi-arrow-counterclockwise"></i> Return Product</li>
-              </a>
-              
-              
-              <a href="#">
-                <li><i class="bi bi-box-arrow-right"></i> Logout</li>
-              </a>
-            </ul>
-          </aside>
+                <ul class="brx-sidebar-menu">
+                    <a href="profile.html">
+                        <li><i class="bi bi-person"></i> Profile</li>
+                    </a>
+                    <a href="orders.html">
+                        <li><i class="bi bi-box"></i> Orders</li>
+                    </a>
+                    <a href="wishlist.html">
+                        <li><i class="bi bi-heart"></i> Wishlist</li>
+                    </a>
+                    <a href="addresses.html">
+                        <li><i class="bi bi-geo-alt"></i> Address</li>
+                    </a>
+                    <a href="return-product.html">
+                        <li><i class="bi bi-arrow-counterclockwise"></i> Return Product</li>
+                    </a>
 
-          <!-- Main Content -->
-          <main class="brx-dashboard-content">
-            <div class="brx-dashboard-main">
-              <div class="top-menu-content">
-                <!-- Mobile Toggle -->
-                <button class="brx-sidebar-toggle-btn" id="brxSidebarToggle">
-                  <i class="fa-solid fa-angles-right"></i>
-                </button>
-              </div>
 
-              <!-- Cards -->
-              <div class="brx-cards-grid">
-                <a href="orders.html">
-                  <div class="brx-card">
-                    <i class="bi bi-bag-check"></i>
-                    <h3>12</h3>
-                    <p>Total Orders</p>
-                  </div>
-                </a>
+                    <a href="#">
+                        <li><i class="bi bi-box-arrow-right"></i> Logout</li>
+                    </a>
+                </ul>
+            </aside>
 
-                <a href="wishlist.html">
-                  <div class="brx-card">
-                    <i class="bi bi-heart"></i>
-                    <h3>8</h3>
-                    <p>Wishlist</p>
-                  </div>
-                </a>
+            <!-- Main Content -->
+            <main class="brx-dashboard-content">
+                <div class="brx-dashboard-main">
+                    <div class="top-menu-content">
+                        <!-- Mobile Toggle -->
+                        <button class="brx-sidebar-toggle-btn" id="brxSidebarToggle">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
 
-                <a href="#">
-                  <div class="brx-card">
-                    <i class="bi bi-ticket"></i>
-                    <h3>5</h3>
-                    <p>Coupons</p>
-                  </div>
-                </a>
+                    <!-- Cards -->
+                    <div class="brx-cards-grid">
+                        <a href="orders.html">
+                            <div class="brx-card">
+                                <i class="bi bi-bag-check"></i>
+                                <h3>12</h3>
+                                <p>Total Orders</p>
+                            </div>
+                        </a>
 
-                <a href="addresses.html">
-                  <div class="brx-card">
-                    <i class="bi bi-geo"></i>
-                    <h3>3</h3>
-                    <p>Saved Address</p>
-                  </div>
-                </a>
-              </div>
+                        <a href="wishlist.html">
+                            <div class="brx-card">
+                                <i class="bi bi-heart"></i>
+                                <h3>8</h3>
+                                <p>Wishlist</p>
+                            </div>
+                        </a>
 
-            </div>
-          </main>
+                        <a href="#">
+                            <div class="brx-card">
+                                <i class="bi bi-ticket"></i>
+                                <h3>5</h3>
+                                <p>Coupons</p>
+                            </div>
+                        </a>
+
+                        <a href="addresses.html">
+                            <div class="brx-card">
+                                <i class="bi bi-geo"></i>
+                                <h3>3</h3>
+                                <p>Saved Address</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </main>
         </div>
-      </div>
+    </div>
 
- <!-- footer -->
+    <!-- footer -->
     <footer class="main-footer pt-5">
         <div class="container">
             <div class="row gy-4 footer-row">
@@ -338,7 +338,7 @@
                         <li><a href="termscondition.html">Terms & Conditions</a></li>
                         <li><a href="returnexchange.html">Returns & Exchanges</a></li>
                         <li><a href="wishlist.html">Wishlist</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </div>
 
@@ -388,14 +388,14 @@
 
     <script src="web/script/script.js"></script>
 
-  <!-- My Script File -->
-  <script src="assets/JS/toggle_sidebar.js"></script>
-  <!-- <script src="./assets/JS/my_script.js"></script> -->
-  <!-- <script src="./assets/JS/new_script.js"></script> -->
-  <!-- My Script File -->
+    <!-- My Script File -->
+    <script src="assets/JS/toggle_sidebar.js"></script>
+    <!-- <script src="./assets/JS/my_script.js"></script> -->
+    <!-- <script src="./assets/JS/new_script.js"></script> -->
+    <!-- My Script File -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="assets/JS/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/JS/script.js"></script> -->
 </body>
 
 </html>

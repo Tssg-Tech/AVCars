@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,28 +31,28 @@
     <header>
         <div class="container py-2 d-flex align-items-center justify-content-between">
             <!-- <div class="d-flex gap-3 align-items-center justify-content-start"> -->
-                <div class="d-flex gap-3 align-items-center justify-content-start">
+            <div class="d-flex gap-3 align-items-center justify-content-start">
                 <a href="index.html"><img src="web/images/carlogo.png" width="100px" alt=""></a>
-             <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>    
+                <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>
             </div>
-                <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="shop.html">SHOP</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            MENU
-                        </a>
-                        <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
-                            <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
-                            <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
-                        </ul>
-                    </li>
-                </ul>
-               
+            <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        MENU
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                        <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+            </ul>
+
             <!-- </div> -->
             <div class="icons d-flex gap-3">
-                <i class="bi bi-person-fill"></i>
+                <a href="login.html"><i class="bi bi-person-fill"></i></a>
                 <a href="wishlist.html"><i class="bi bi-heart-fill"></i></a>
                 <i class="bi bi-cart-fill" onclick="openAddToCart()"></i>
             </div>
@@ -60,152 +60,153 @@
     </header>
 
     <!-- mobile menu -->
-<div class="menudiv d-md-none">
-    <div class="closemenuicon">
-     <i class="bi bi-x-lg" onclick="closeMenu()"></i>
-     </div>
-<ul class="menulist">
-    <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-</ul>
-</div>
-
- <!-- add to cart start -->
-<div class="addtocart">
-  <!-- Header -->
-  <div class="cart-header">
-    <h4>Add to Cart</h4>
-    <i class="bi bi-x-lg" onclick="closeAddToCart()"></i>
-  </div>
-
-  <!-- Cart Content -->
-  <div class="cart-body">
-
-    <!-- Services -->
-    <div class="servsection">
-      
- <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
+    <div class="menudiv d-md-none">
+        <div class="closemenuicon">
+            <i class="bi bi-x-lg" onclick="closeMenu()"></i>
         </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-      <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-      <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹3,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
-
-       <div class="cart-item">
-        <span>Vossen Precision VPS-312</span>
-        <div>
-          <span>₹36,000</span>
-          <i class="bi bi-trash3-fill"></i>
-        </div>
-      </div>
+        <ul class="menulist">
+            <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </div>
 
-    <!-- Total Section -->
-    <div class="totalsection">
-      <div>
-        <span>Subtotal</span>
-        <span>₹6,000</span>
-      </div>
-      <div>
-        <span>Tax (5%)</span>
-        <span>₹300</span>
-      </div>
-      <div class="total">
-        <span>Total</span>
-        <span>₹6,300</span>
-      </div>
+    <!-- add to cart start -->
+    <div class="addtocart">
+        <!-- Header -->
+        <div class="cart-header">
+            <h4>Add to Cart</h4>
+            <i class="bi bi-x-lg" onclick="closeAddToCart()"></i>
+        </div>
 
-      <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+        <!-- Cart Content -->
+        <div class="cart-body">
+
+            <!-- Services -->
+            <div class="servsection">
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹3,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <span>Vossen Precision VPS-312</span>
+                    <div>
+                        <span>₹36,000</span>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Section -->
+            <div class="totalsection">
+                <div>
+                    <span>Subtotal</span>
+                    <span>₹6,000</span>
+                </div>
+                <div>
+                    <span>Tax (5%)</span>
+                    <span>₹300</span>
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span>₹6,300</span>
+                </div>
+
+                <a href="checkout.html" class="frmsubmit w-100">Proceed to Checkout <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
     </div>
-
-  </div>
-</div>
-  <!-- add to cart end -->
+    <!-- add to cart end -->
     <!-- hero banner -->
     <div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel">
         <div class="carousel-indicators d-none d-md-flex">
@@ -224,7 +225,8 @@
                         <div class="container">
                             <h1 data-aos="fade-right"><span>The World's </span>Best</h1>
                             <h2 data-aos="fade-left" data-aos-delay="300">auto parts</h2>
-                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading auto parts company with the world-wide
+                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading
+                                auto parts company with the world-wide
                                 reputation of premium quality
                             </p>
                             <div class="button d-none d-md-block">
@@ -241,7 +243,8 @@
                         <div class="container">
                             <h1 data-aos="fade-right"><span>Premium </span>Goods</h1>
                             <h2 data-aos="fade-left" data-aos-delay="300">for racers</h2>
-                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading auto parts company with the world-wide
+                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading
+                                auto parts company with the world-wide
                                 reputation of premium quality
                             </p>
                             <div class="button d-none d-md-block">
@@ -258,7 +261,8 @@
                         <div class="container">
                             <h1 data-aos="fade-right"><span>WIDE </span>Selection</h1>
                             <h2 data-aos="fade-left" data-aos-delay="300">of items</h2>
-                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading auto parts company with the world-wide
+                            <p class="d-none d-md-block" data-aos="zoom-out" data-aos-delay="600">we are the leading
+                                auto parts company with the world-wide
                                 reputation of premium quality
                             </p>
                             <div class="button d-none d-md-block">
@@ -374,12 +378,14 @@
         <div class="container">
             <div class="row gx-0 gy-3">
 
-                 <!-- Card 1 -->
+                <!-- Card 1 -->
                 <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
+                    <a href="productdescription.html" class="product-card">
                         <img src="web/images/wheels.png" alt="">
-                        <div class="product-title">Vossen Precision VPS-312</div>
-
+                        <div class="position-relative">
+                            <div class="product-title">Vossen Precision VPS-312</div>
+                            <i class="bi bi-heart-fill onprd"></i>
+                        </div>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -390,16 +396,20 @@
 
                         <div class="price">₹520.00</div>
                         <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                            <span>BUY NOW</span>
                         </div>
+
                     </a>
                 </div>
 
                 <!-- Card 2 -->
-              <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
+                <div class="col-lg-4 col-6">
+                    <a href="productdescription.html" class="product-card">
                         <img src="web/images/wheels.png" alt="">
-                        <div class="product-title">Vossen Precision VPS-312</div>
+                        <div class="position-relative">
+                            <div class="product-title">Vossen Precision VPS-312</div>
+                            <i class="bi bi-heart-fill onprd"></i>
+                        </div>
 
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -411,17 +421,19 @@
 
                         <div class="price">₹520.00</div>
                         <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                            <span>BUY NOW</span>
                         </div>
                     </a>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
+                    <a href="productdescription.html" class="product-card">
                         <img src="web/images/wheels.png" alt="">
-                        <div class="product-title">Vossen Precision VPS-312</div>
-
+                        <div class="position-relative">
+                            <div class="product-title">Vossen Precision VPS-312</div>
+                            <i class="bi bi-heart-fill onprd"></i>
+                        </div>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -432,16 +444,19 @@
 
                         <div class="price">₹520.00</div>
                         <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                            <span>BUY NOW</span>
                         </div>
                     </a>
                 </div>
 
                 <!-- Card 1 -->
                 <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
+                    <a href="productdescription.html" class="product-card">
                         <img src="web/images/ctg-3.png" alt="">
-                        <div class="product-title">Honda City Side mirror 3 / ZX</div>
+                        <div class="position-relative">
+                            <div class="product-title">Honda City Side mirror 3 / ZX</div>
+                            <i class="bi bi-heart-fill onprd"></i>
+                        </div>
 
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
@@ -453,17 +468,20 @@
 
                         <div class="price">₹2,452.00</div>
                         <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                            <span>BUY NOW</span>
                         </div>
                     </a>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
+                    <a href="productdescription.html" class="product-card">
                         <img src="web/images/marutialto.png" alt="">
-                        <div class="product-title">Maruti alto 800 VX side mirror</div>
 
+                        <div class="position-relative">
+                            <div class="product-title">Maruti alto 800 VX side mirror</div>
+                            <i class="bi bi-heart-fill onprd"></i>
+                        </div>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -474,17 +492,19 @@
 
                         <div class="price">₹520.00</div>
                         <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                            <span>BUY NOW</span>
                         </div>
                     </a>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
+                    <a href="productdescription.html" class="product-card">
                         <img src="web/images/datsungo.png" alt="">
-                        <div class="product-title">Datsun Go side mirror</div>
-
+                        <div class="position-relative">
+                            <div class="product-title">Datsun Go side mirror</div>
+                            <i class="bi bi-heart-fill onprd"></i>
+                        </div>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -495,11 +515,11 @@
 
                         <div class="price">₹520.00</div>
                         <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                            <span>BUY NOW</span>
                         </div>
                     </a>
                 </div>
-               
+
             </div>
             <div class="d-flex mt-5 align-items-center justify-content-center">
                 <div class="button">
@@ -532,7 +552,7 @@
 
                 <!-- Row 1 -->
                 <div class="col-lg-6 order-1" data-aos="flip-up">
-                    <a href="" class="row g-0">
+                    <a href="productdescription.html" class="row g-0">
                         <div class="col-6 quality-div">
                             <img src="web/images/qltyimg1.jpg" class="img-fluid">
                         </div>
@@ -547,8 +567,8 @@
                 </div>
 
                 <div class="col-lg-6 order-lg-2 order-3" data-aos="flip-up">
-                   <a href="" class="row g-0">
-                        <div class="col-6 quality-div" >
+                    <a href="productdescription.html" class="row g-0">
+                        <div class="col-6 quality-div">
                             <img src="web/images/qltyimg1.jpg" class="img-fluid">
                         </div>
                         <div class="col-6 d-flex align-items-center">
@@ -563,7 +583,7 @@
 
                 <!-- Row 2 -->
                 <div class="col-lg-6 order-lg-3 order-2" data-aos="flip-up">
-                    <a href="" class="row g-0">
+                    <a href="productdescription.html" class="row g-0">
                         <div class="col-6 d-flex align-items-center">
                             <div class="content p-sm-4 px-2">
                                 <h5>Impala vs Camaro</h5>
@@ -578,7 +598,7 @@
                 </div>
 
                 <div class="col-lg-6 order-4" data-aos="flip-up">
-                    <a href="" class="row g-0 flex-row-reverse">
+                    <a href="productdescription.html" class="row g-0 flex-row-reverse">
                         <div class="col-6 quality-div">
                             <img src="web/images/qltyimg1.jpg" class="img-fluid">
                         </div>
@@ -840,7 +860,7 @@
                         <li><a href="termscondition.html">Terms & Conditions</a></li>
                         <li><a href="returnexchange.html">Returns & Exchanges</a></li>
                         <li><a href="wishlist.html">Wishlist</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </div>
 
@@ -885,7 +905,7 @@
             </div>
         </div>
     </footer>
-<div class="blur-overlay"></div>
+    <div class="blur-overlay"></div>
     <script src="web/script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -894,31 +914,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-           var carousel = document.querySelector('#carouselExampleAutoplaying');
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var carousel = document.querySelector('#carouselExampleAutoplaying');
 
-carousel.addEventListener('slid.bs.carousel', function () {
-  
-  // Remove AOS animation classes
-  document
-    .querySelectorAll('#carouselExampleAutoplaying .carousel-item [data-aos]')
-    .forEach(function(el) {
-        el.classList.remove('aos-animate');
-    });
+        carousel.addEventListener('slid.bs.carousel', function () {
 
-  // Force reflow (important trick)
-  void document.body.offsetWidth;
+            // Remove AOS animation classes
+            document
+                .querySelectorAll('#carouselExampleAutoplaying .carousel-item [data-aos]')
+                .forEach(function (el) {
+                    el.classList.remove('aos-animate');
+                });
 
-  // Re-trigger AOS
-  document.querySelectorAll('#carouselExampleAutoplaying .carousel-item.active [data-aos]').forEach(function(el) {
-    el.classList.add('aos-animate');
-  });
+            // Force reflow (important trick)
+            void document.body.offsetWidth;
 
-});
-AOS.init();
+            // Re-trigger AOS
+            document.querySelectorAll('#carouselExampleAutoplaying .carousel-item.active [data-aos]').forEach(function (el) {
+                el.classList.add('aos-animate');
+            });
 
-</script>
+        });
+        AOS.init();
+
+    </script>
     <script>
         $('.autoplay').slick({
             slidesToShow: 2,

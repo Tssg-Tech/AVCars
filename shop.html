@@ -27,31 +27,31 @@
         <a href="https://wa.me/your-number" target="_blank"><i class="bi bi-whatsapp"></i></a>
     </div>
 
-   <header>
+    <header>
         <div class="container py-2 d-flex align-items-center justify-content-between">
             <!-- <div class="d-flex gap-3 align-items-center justify-content-start"> -->
-                <div class="d-flex gap-3 align-items-center justify-content-start">
+            <div class="d-flex gap-3 align-items-center justify-content-start">
                 <a href="index.html"><img src="web/images/carlogo.png" width="100px" alt=""></a>
-             <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>    
+                <i class="bi bi-three-dots menuicon d-md-none" onclick="openMenu()"></i>
             </div>
-                <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
-                    <li><a href="index.html" class="active">HOME</a></li>
-                    <li><a href="shop.html">SHOP</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            MENU
-                        </a>
-                        <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
-                            <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
-                            <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
-                        </ul>
-                    </li>
-                </ul>
-               
+            <ul class="d-none d-md-flex gap-4 align-items-center justify-content-start">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        MENU
+                    </a>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="about.html">ABOUT US</a></li>
+                        <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                        <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </li>
+            </ul>
+
             <!-- </div> -->
             <div class="icons d-flex gap-3">
-                <i class="bi bi-person-fill"></i>
+                <a href="login.html"><i class="bi bi-person-fill"></i></a>
                 <a href="wishlist.html"><i class="bi bi-heart-fill"></i></a>
                 <i class="bi bi-cart-fill" onclick="openAddToCart()"></i>
             </div>
@@ -60,18 +60,18 @@
 
     <!-- mobile menu -->
     <div class="menudiv d-md-none">
-    <div class="closemenuicon">
-     <i class="bi bi-x-lg" onclick="closeMenu()"></i>
-     </div>
-<ul class="menulist">
-    <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-</ul>
-</div>
+        <div class="closemenuicon">
+            <i class="bi bi-x-lg" onclick="closeMenu()"></i>
+        </div>
+        <ul class="menulist">
+            <a href="index.html"><img src="web/images/carlogo.png" class="py-4" width="100px" alt=""></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
 
     <!-- add to cart start -->
     <div class="addtocart">
@@ -228,9 +228,8 @@
                     <button class="btn filter-btn d-lg-none mb-3" onclick="showFilterDiv()">Filter</button>
                     <div class="filter-box">
 
-                        <button class="btn btn-close d-lg-none mb-3"
-        onclick="closeFilterDiv()">
-</button>
+                        <button class="btn btn-close d-lg-none mb-3" onclick="closeFilterDiv()">
+                        </button>
                         <h5>Filter by Price</h5>
 
                         <div class="price-filter">
@@ -265,7 +264,7 @@
 
                             <button class="sort-btn dropdown-toggle" data-bs-toggle="dropdown">
 
-                               Product Brand
+                                Product Brand
 
                             </button>
 
@@ -373,7 +372,7 @@
 
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                       2011
+                                        2011
                                     </a>
                                 </li>
 
@@ -385,7 +384,7 @@
 
                                 <li>
                                     <a class="dropdown-item" href="#">
-                                       2013
+                                        2013
                                     </a>
                                 </li>
 
@@ -402,11 +401,11 @@
                         <hr>
 
                         <div class="d-flex align-items-center justify-content-between">
-                            <button class="btn filter-btn"  onclick="closeFilterDiv()">Apply Filter</button>
-<span  onclick="closeFilterDiv()">clear all</span>
-                            </div>
+                            <button class="btn filter-btn" onclick="closeFilterDiv()">Apply Filter</button>
+                            <span onclick="closeFilterDiv()">clear all</span>
+                        </div>
 
-                             <hr>
+                        <hr>
                         <h5>Categories</h5>
                         <ul class="shop-page-ctg">
                             <li><a href="">ACDelco</li></a>
@@ -485,140 +484,153 @@
                         </div>
 
                     </div>
-                   
-            <div class="row gx-0 gy-3">
 
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
-                        <img src="web/images/ctg-3.png" alt="">
-                        <div class="product-title">Honda City Side mirror 3 / ZX</div>
+                    <div class="row gx-0 gy-3">
 
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-6">
+                            <a href="productdescription.html" class="product-card">
+                                <img src="web/images/ctg-3.png" alt="">
+                                <div class="position-relative">
+                                    <div class="product-title">Honda City Side mirror 3 / ZX</div>
+                                    <i class="bi bi-heart-fill onprd"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <div class="price">₹2,452.00</div>
+                                <div class="button d-none d-sm-flex">
+                                    <span>BUY NOW</span>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="price">₹2,452.00</div>
-                        <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
-                        </div>
-                    </a>
-                </div>
+                        <!-- Card 2 -->
+                        <div class="col-lg-4 col-6">
+                            <a href="productdescription.html" class="product-card">
+                                <img src="web/images/marutialto.png" alt="">
+                                <div class="position-relative">
+                                    <div class="product-title">Maruti alto 800 VX side mirror</div>
+                                    <i class="bi bi-heart-fill onprd"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
 
-                <!-- Card 2 -->
-                <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
-                        <img src="web/images/marutialto.png" alt="">
-                        <div class="product-title">Maruti alto 800 VX side mirror</div>
-
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-
-                        <div class="price">₹520.00</div>
-                        <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
-                        <img src="web/images/datsungo.png" alt="">
-                        <div class="product-title">Datsun Go side mirror</div>
-
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                                <div class="price">₹520.00</div>
+                                <div class="button d-none d-sm-flex">
+                                    <span>BUY NOW</span>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="price">₹520.00</div>
-                        <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                        <!-- Card 3 -->
+                        <div class="col-lg-4 col-6">
+                            <a href="productdescription.html" class="product-card">
+                                <img src="web/images/datsungo.png" alt="">
+                                <div class="position-relative">
+                                    <div class="product-title">Datsun Go side mirror</div>
+                                    <i class="bi bi-heart-fill onprd"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <div class="price">₹520.00</div>
+                                <div class="button d-none d-sm-flex">
+                                    <span>BUY NOW</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
-                        <img src="web/images/wheels.png" alt="">
-                        <div class="product-title">Vossen Precision VPS-312</div>
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-6">
+                            <a href="productdescription.html" class="product-card">
+                                <img src="web/images/wheels.png" alt="">
 
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
+                                <div class="position-relative">
+                                    <div class="product-title">AV5 wire non-autofold side mirror</div>
+                                    <i class="bi bi-heart-fill onprd"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
 
-                        <div class="price">₹520.00</div>
-                        <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Card 2 -->
-              <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
-                        <img src="web/images/wheels.png" alt="">
-                        <div class="product-title">Vossen Precision VPS-312</div>
-
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-
-                        <div class="price">₹520.00</div>
-                        <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-6">
-                    <a href="" class="product-card">
-                        <img src="web/images/wheels.png" alt="">
-                        <div class="product-title">Vossen Precision VPS-312</div>
-
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                                <div class="price">₹2599.00</div>
+                                <div class="button d-none d-sm-flex">
+                                    <span>BUY NOW</span>
+                                </div>
+                            </a>
                         </div>
 
-                        <div class="price">₹520.00</div>
-                        <div class="button d-none d-sm-flex">
-                            <span href="">BUY NOW</span>
+                        <!-- Card 2 -->
+                        <div class="col-lg-4 col-6">
+                            <a href="productdescription.html" class="product-card">
+                                <img src="web/images/wheels.png" alt="">
+                                <div class="position-relative">
+                                    <div class="product-title">AV5 wire non-autofold side mirror</div>
+                                    <i class="bi bi-heart-fill onprd"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <div class="price">₹520.00</div>
+                                <div class="button d-none d-sm-flex">
+                                    <span>BUY NOW</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="d-flex mt-5 align-items-center justify-content-center">
-                <div class="button">
-                    <a href="shop.html">Show More</a>
-                </div>
-            </div>
-       
+
+                        <!-- Card 3 -->
+                        <div class="col-lg-4 col-6">
+                            <a href="productdescription.html" class="product-card">
+                                <img src="web/images/wheels.png" alt="">
+                                <div class="position-relative">
+                                    <div class="product-title">AV5 wire non-autofold side mirror</div>
+                                    <i class="bi bi-heart-fill onprd"></i>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+
+                                <div class="price">₹520.00</div>
+                                <div class="button d-none d-sm-flex">
+                                    <span>BUY NOW</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5 align-items-center justify-content-center">
+                        <div class="button">
+                            <a href="shop.html">Show More</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -660,7 +672,7 @@
                         <li><a href="termscondition.html">Terms & Conditions</a></li>
                         <li><a href="returnexchange.html">Returns & Exchanges</a></li>
                         <li><a href="wishlist.html">Wishlist</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </div>
 
@@ -719,7 +731,7 @@
     <script>
         AOS.init();
 
-// 
+        // 
         const minRange = document.getElementById("minRange");
         const maxRange = document.getElementById("maxRange");
 
@@ -752,42 +764,42 @@
         // showFilterDiv() function
 
 
-function showFilterDiv() {
+        function showFilterDiv() {
 
-    document
-        .querySelector(".filter-box")
-        .classList.add("showing");
-
- 
-
-    document.body.style.overflow = "hidden";
-}
-
-function closeFilterDiv() {
-
-    document
-        .querySelector(".filter-box")
-        .classList.remove("showing");
+            document
+                .querySelector(".filter-box")
+                .classList.add("showing");
 
 
-    document.body.style.overflow = "auto";
-}
 
-/* CLOSE ON RESIZE */
+            document.body.style.overflow = "hidden";
+        }
 
-window.addEventListener("resize", function () {
+        function closeFilterDiv() {
 
-    if (window.innerWidth >= 992) {
+            document
+                .querySelector(".filter-box")
+                .classList.remove("showing");
 
-        closeFilterDiv();
 
-    }
+            document.body.style.overflow = "auto";
+        }
 
-});
+        /* CLOSE ON RESIZE */
 
-        function showFilterDiv(){
+        window.addEventListener("resize", function () {
+
+            if (window.innerWidth >= 992) {
+
+                closeFilterDiv();
+
+            }
+
+        });
+
+        function showFilterDiv() {
             document.querySelector(".filter-box").classList.toggle("showing");
-            document.body.style.overflow="hidden";
+            document.body.style.overflow = "hidden";
         }
     </script>
 
