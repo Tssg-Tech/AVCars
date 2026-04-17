@@ -58,6 +58,28 @@ a {
     padding: 0.75rem;
 }
 }
+
+.searchbar{
+    max-width: 350px;
+    width: 100%;
+    background-color: var(--clr-white);
+    padding: 0.5rem;
+    border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    cursor: pointer;
+}
+.searchbar i{
+    /* padding-right: ; */
+}
+.searchbar input{
+    width: 100%;
+   border: none;
+}
+.searchbar input:focus-visible{
+    outline: none;
+}
 /* sociallinkes */
 
 .sociallinkes{
